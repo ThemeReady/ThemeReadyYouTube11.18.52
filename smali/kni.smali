@@ -1,0 +1,92 @@
+.class public final Lkni;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lwfc;
+
+
+# instance fields
+.field private final a:Lwfz;
+
+.field private final b:Lwfz;
+
+.field private final c:Lwfz;
+
+.field private final d:Lwfz;
+
+
+# direct methods
+.method public constructor <init>(Lwfz;Lwfz;Lwfz;Lwfz;)V
+    .locals 0
+
+    .prologue
+    .line 25
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 27
+    iput-object p1, p0, Lkni;->a:Lwfz;
+
+    .line 29
+    iput-object p2, p0, Lkni;->b:Lwfz;
+
+    .line 31
+    iput-object p3, p0, Lkni;->c:Lwfz;
+
+    .line 33
+    iput-object p4, p0, Lkni;->d:Lwfz;
+
+    .line 34
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 5
+
+    .prologue
+    .line 1038
+    new-instance v4, Lknf;
+
+    iget-object v0, p0, Lkni;->a:Lwfz;
+
+    .line 1039
+    invoke-interface {v0}, Lwfz;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/content/Context;
+
+    iget-object v1, p0, Lkni;->b:Lwfz;
+
+    .line 1040
+    invoke-interface {v1}, Lwfz;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lkwh;
+
+    iget-object v2, p0, Lkni;->c:Lwfz;
+
+    .line 1041
+    invoke-interface {v2}, Lwfz;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lnxj;
+
+    iget-object v3, p0, Lkni;->d:Lwfz;
+
+    .line 1042
+    invoke-interface {v3}, Lwfz;->get()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lkkv;
+
+    invoke-direct {v4, v0, v1, v2, v3}, Lknf;-><init>(Landroid/content/Context;Lkwh;Lnxj;Lkkv;)V
+
+    .line 11
+    return-object v4
+.end method
